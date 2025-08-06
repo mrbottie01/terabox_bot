@@ -1,1 +1,10 @@
 
+services:
+  - type: worker
+    name: terabox-telegram-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
